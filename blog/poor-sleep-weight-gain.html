@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NY47G8QJRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NY47G8QJRM');
+
+  // Track CTA clicks
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="teachable"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_category': 'Conversion',
+          'event_label': btn.innerText.trim(),
+          'value': 49
+        });
+      });
+    });
+  });
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Link Between Poor Sleep and Weight Gain, Explained | University of Today</title>
