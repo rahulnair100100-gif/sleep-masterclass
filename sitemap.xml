@@ -1,61 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main landing page -->
+  <!-- Main landing page — B2B Employee Wellbeing -->
   <url>
     <loc>https://university-of-today.com/</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://university-of-today.com/sleep-transformation-masterclass</loc>
-    <lastmod>2025-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://university-of-today.com/images/sleep-masterclass-og.jpg</image:loc>
-      <image:title>Sleep Transformation Masterclass</image:title>
-      <image:caption>Fix insomnia and sleep on time using breathwork, yoga and meditation</image:caption>
-    </image:image>
   </url>
 
   <!-- Blog posts -->
   <url>
     <loc>https://university-of-today.com/blog/breathwork-exercises-fall-asleep</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://university-of-today.com/blog/poor-sleep-weight-gain</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://university-of-today.com/blog/how-to-fix-sleep-schedule</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://university-of-today.com/blog/yoga-poses-for-sleep</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://university-of-today.com/blog/why-cant-i-sleep-insomnia-tips</loc>
-    <lastmod>2025-03-16</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
