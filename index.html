@@ -1090,6 +1090,36 @@ function loadVideo() {
 }
 </script>
 
+<!-- LEAD MAGNET -->
+<section style="background:var(--midnight); padding:68px 24px;">
+  <div class="container">
+    <div style="max-width:680px; margin:0 auto; background:linear-gradient(135deg,rgba(76,175,130,0.1),rgba(26,46,74,0.8)); border:1px solid rgba(76,175,130,0.3); border-radius:16px; padding:44px 40px; text-align:center;">
+      <div style="font-size:2.4rem; margin-bottom:16px;">📥</div>
+      <div class="section-label" style="margin-bottom:12px;">Free Resource</div>
+      <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem); margin-bottom:12px;">The HR Leader's Guide to Fixing <em>Employee Sleep and Stress</em></h2>
+      <p style="font-size:0.95rem; color:var(--soft); line-height:1.75; margin-bottom:28px; max-width:520px; margin-left:auto; margin-right:auto;">7 evidence-based strategies to reduce burnout, address insomnia and build a compelling wellbeing ROI report — sent straight to your inbox, free.</p>
+      <form id="lead-form" onsubmit="submitLeadForm(event)" style="display:flex; flex-direction:column; gap:12px; max-width:440px; margin:0 auto;">
+        <input type="text" id="lm-name" placeholder="Your name" required
+          style="background:rgba(255,255,255,0.06); border:1px solid rgba(200,169,110,0.3); border-radius:6px; padding:13px 16px; color:var(--cream); font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; width:100%;">
+        <input type="email" id="lm-email" placeholder="Work email address" required
+          style="background:rgba(255,255,255,0.06); border:1px solid rgba(200,169,110,0.3); border-radius:6px; padding:13px 16px; color:var(--cream); font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; width:100%;">
+        <input type="text" id="lm-company" placeholder="Company name" required
+          style="background:rgba(255,255,255,0.06); border:1px solid rgba(200,169,110,0.3); border-radius:6px; padding:13px 16px; color:var(--cream); font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none; width:100%;">
+        <button type="submit" id="lm-btn"
+          style="background:linear-gradient(135deg,#4caf82,#3a9e72); color:white; font-family:'DM Sans',sans-serif; font-weight:700; font-size:1rem; padding:15px; border-radius:6px; border:none; cursor:pointer; letter-spacing:0.04em; text-transform:uppercase;">
+          Send Me the Free Guide →
+        </button>
+      </form>
+      <div id="lm-success" style="display:none; padding:20px 0;">
+        <div style="font-size:2rem; margin-bottom:10px;">✅</div>
+        <p style="color:#4caf82; font-weight:600; font-size:1rem; margin-bottom:6px;">Your free guide is on its way!</p>
+        <p style="color:var(--soft); font-size:0.88rem;">Check your inbox — and feel free to share it with your HR team.</p>
+      </div>
+      <p style="font-size:0.74rem; color:rgba(217,207,192,0.4); margin-top:14px;">🔒 No spam. Your details are kept private. Unsubscribe any time.</p>
+    </div>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section class="pricing">
   <div class="container">
@@ -1292,6 +1322,58 @@ function loadVideo() {
         else applyPricing('ROW');
       }).catch(function(){ applyPricing('ROW'); });
   })();
+
+  // ── LEAD MAGNET FORM ──
+  function submitLeadForm(e) {
+    e.preventDefault();
+    var name    = document.getElementById('lm-name').value;
+    var email   = document.getElementById('lm-email').value;
+    var company = document.getElementById('lm-company').value;
+    var btn     = document.getElementById('lm-btn');
+    var success = document.getElementById('lm-success');
+    var form    = document.getElementById('lead-form');
+
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    // Track in GA
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'lead_magnet_download', {
+        'event_category': 'Lead Generation',
+        'event_label': company,
+        'value': 1
+      });
+    }
+
+    // Submit to Formspree → forwards to rahulnair100100@gmail.com
+    fetch('https://formspree.io/f/xwpkqdnv', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        company: company,
+        message: 'Lead magnet download request from university-of-today.com',
+        _replyto: email
+      })
+    })
+    .then(function() {
+      form.style.display = 'none';
+      success.style.display = 'block';
+      // Trigger PDF download
+      var a = document.createElement('a');
+      a.href = '/hr-guide-sleep-stress.pdf';
+      a.download = 'HR-Guide-Sleep-Stress-University-of-Today.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    })
+    .catch(function() {
+      btn.textContent = 'Send Me the Free Guide →';
+      btn.disabled = false;
+    });
+  }
+
 </script>
 </body>
 </html>
