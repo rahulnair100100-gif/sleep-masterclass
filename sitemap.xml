@@ -1,48 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main landing page — B2B Employee Wellbeing -->
+  <!-- Main landing page -->
   <url>
     <loc>https://university-of-today.com/</loc>
-    <lastmod>2025-04-14</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Blog posts -->
+  <!-- Return policy -->
   <url>
-    <loc>https://university-of-today.com/blog/breathwork-exercises-fall-asleep</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://university-of-today.com/return-policy.html</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- B2B HR Blog Posts -->
+  <url>
+    <loc>https://university-of-today.com/blog/cost-of-employee-burnout</loc>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://university-of-today.com/blog/poor-sleep-weight-gain</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://university-of-today.com/blog/business-case-for-wellbeing</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://university-of-today.com/blog/how-to-fix-sleep-schedule</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://university-of-today.com/blog/signs-sleep-deprivation-workplace</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://university-of-today.com/blog/yoga-poses-for-sleep</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://university-of-today.com/blog/hr-guide-reducing-workplace-stress</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://university-of-today.com/blog/why-cant-i-sleep-insomnia-tips</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://university-of-today.com/blog/why-eap-isnt-enough-burnout</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://university-of-today.com/blog/employee-wellbeing-programmes-what-works</loc>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://university-of-today.com/blog/finance-law-employee-burnout-2025</loc>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.85</priority>
   </url>
 
 </urlset>
