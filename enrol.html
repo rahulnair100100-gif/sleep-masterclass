@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrol Your Team | University of Today Sleep & Wellbeing Masterclass</title>
+<meta name="description" content="Enrol your team in the University of Today Sleep & Wellbeing Masterclass. Submit your team details and we will send you a payment link within 24 hours.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://university-of-today.com/enrol.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NY47G8QJRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NY47G8QJRM');
+</script>
+
+<style>
+  :root {
+    --bg:       #091525;
+    --navy:     #0d1b2a;
+    --panel:    #132236;
+    --card:     #1a2e4a;
+    --accent:   #1e3a5f;
+    --gold:     #c8a96e;
+    --gold-lt:  #e8c98a;
+    --green:    #4caf82;
+    --white:    #ffffff;
+    --cream:    #f5f0e8;
+    --soft:     #d9cfc0;
+    --muted:    #8a9bad;
+    --danger:   #e57373;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(9,21,37,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,169,110,0.18);
+    padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--gold); text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-back {
+    font-size: 0.82rem; color: var(--muted);
+    text-decoration: none; transition: color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-back:hover { color: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, #0d1b2a 0%, #091525 50%, #060f1c 100%);
+    border-bottom: 1px solid rgba(200,169,110,0.12);
+    padding: 64px 24px 52px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(200,169,110,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.28);
+    color: var(--gold);
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 7px 18px; border-radius: 30px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 700; line-height: 1.1;
+    color: var(--white); margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub {
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    color: var(--soft); max-width: 560px;
+    margin: 0 auto 32px; line-height: 1.75;
+  }
+  .trust-row {
+    display: flex; align-items: center; justify-content: center;
+    flex-wrap: wrap; gap: 20px 32px;
+    font-size: 0.82rem; color: var(--muted);
+  }
+  .trust-item { display: flex; align-items: center; gap: 7px; }
+  .trust-item span { color: var(--gold); font-weight: 600; }
+
+  /* ── MAIN LAYOUT ── */
+  .page-wrap {
+    max-width: 1020px; margin: 0 auto;
+    padding: 52px 24px 80px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
+    align-items: start;
+  }
+
+  /* ── FORM CARD ── */
+  .form-card {
+    background: var(--panel);
+    border: 1px solid rgba(200,169,110,0.18);
+    border-radius: 16px;
+    padding: 40px 36px;
+    position: sticky; top: 90px;
+  }
+  .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--white); margin-bottom: 4px;
+  }
+  .form-sub {
+    font-size: 0.85rem; color: var(--muted);
+    margin-bottom: 28px;
+  }
+
+  .field { margin-bottom: 18px; }
+  .field label {
+    display: block; font-size: 0.8rem; font-weight: 600;
+    color: var(--soft); letter-spacing: 0.06em;
+    text-transform: uppercase; margin-bottom: 7px;
+  }
+  .field label .req { color: var(--gold); margin-left: 2px; }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.22);
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.25s, background 0.25s;
+    appearance: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--gold);
+    background: rgba(200,169,110,0.05);
+  }
+  .field input::placeholder, .field textarea::placeholder {
+    color: rgba(217,207,192,0.32);
+  }
+  .field select option { background: var(--navy); color: var(--cream); }
+  .field textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .submit-btn {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+    color: var(--bg); font-family: 'DM Sans', sans-serif;
+    font-weight: 700; font-size: 1rem;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    border: none; border-radius: 8px;
+    cursor: pointer; margin-top: 8px;
+    transition: opacity 0.2s, transform 0.1s;
+  }
+  .submit-btn:hover { opacity: 0.92; }
+  .submit-btn:active { transform: scale(0.99); }
+  .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .form-note {
+    font-size: 0.75rem; color: var(--muted);
+    text-align: center; margin-top: 14px;
+    line-height: 1.6;
+  }
+
+  /* Success state */
+  .success-state {
+    display: none; text-align: center; padding: 20px 0;
+  }
+  .success-icon {
+    width: 64px; height: 64px;
+    background: rgba(76,175,130,0.15);
+    border: 2px solid var(--green);
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    margin: 0 auto 18px; font-size: 1.8rem;
+  }
+  .success-state h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; color: var(--white); margin-bottom: 10px;
+  }
+  .success-state p { font-size: 0.9rem; color: var(--soft); line-height: 1.7; }
+
+  /* ── INFO PANEL ── */
+  .info-panel { display: flex; flex-direction: column; gap: 32px; }
+
+  .info-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem; font-weight: 700;
+    color: var(--white); margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .info-section h2 em { font-style: italic; color: var(--gold); }
+  .info-section p {
+    font-size: 0.95rem; color: var(--soft);
+    line-height: 1.8; margin-bottom: 10px;
+  }
+
+  /* Steps */
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: flex; gap: 16px;
+    position: relative; padding-bottom: 28px;
+  }
+  .step:last-child { padding-bottom: 0; }
+  .step:not(:last-child)::before {
+    content: '';
+    position: absolute; left: 18px; top: 44px;
+    width: 1px; bottom: 0;
+    background: linear-gradient(to bottom, rgba(200,169,110,0.4), transparent);
+  }
+  .step-num {
+    width: 36px; height: 36px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.82rem;
+    color: var(--bg); letter-spacing: 0.02em;
+    margin-top: 2px;
+  }
+  .step-content h4 {
+    font-size: 0.98rem; font-weight: 600;
+    color: var(--white); margin-bottom: 4px;
+  }
+  .step-content p {
+    font-size: 0.87rem; color: var(--muted); line-height: 1.6; margin: 0;
+  }
+
+  /* Pricing table */
+  .pricing-table {
+    background: var(--panel);
+    border: 1px solid rgba(200,169,110,0.18);
+    border-radius: 12px; overflow: hidden;
+  }
+  .pricing-row {
+    display: grid; grid-template-columns: 1fr auto auto;
+    align-items: center; gap: 12px;
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.88rem;
+  }
+  .pricing-row:last-child { border-bottom: none; }
+  .pricing-row .seats { color: var(--soft); }
+  .pricing-row .per-seat {
+    color: var(--muted); font-size: 0.8rem;
+    text-align: right;
+  }
+  .pricing-row .total {
+    font-weight: 700; color: var(--gold);
+    font-size: 0.95rem; text-align: right;
+    min-width: 70px;
+  }
+  .pricing-row.featured {
+    background: rgba(200,169,110,0.07);
+    border-color: rgba(200,169,110,0.2);
+  }
+  .pricing-row.featured .seats { color: var(--cream); font-weight: 500; }
+  .save-badge {
+    background: var(--green); color: white;
+    font-size: 0.65rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 20px;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .pricing-header {
+    background: rgba(200,169,110,0.08);
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(200,169,110,0.2);
+    display: grid; grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .pricing-header .ph-right { text-align: right; }
+
+  /* Includes */
+  .includes-list { display: flex; flex-direction: column; gap: 10px; }
+  .include-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 0.9rem; color: var(--soft);
+  }
+  .include-icon {
+    width: 28px; height: 28px; flex-shrink: 0;
+    background: rgba(76,175,130,0.12);
+    border: 1px solid rgba(76,175,130,0.3);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem; margin-top: 1px;
+  }
+  .include-text strong { color: var(--cream); font-weight: 500; display: block; font-size: 0.88rem; }
+  .include-text span { font-size: 0.8rem; color: var(--muted); }
+
+  /* Guarantee */
+  .guarantee-box {
+    background: rgba(76,175,130,0.07);
+    border: 1px solid rgba(76,175,130,0.25);
+    border-radius: 10px; padding: 18px 20px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .guarantee-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 2px; }
+  .guarantee-text h4 { font-size: 0.92rem; font-weight: 600; color: var(--cream); margin-bottom: 4px; }
+  .guarantee-text p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center; padding: 24px;
+    font-size: 0.76rem; color: rgba(217,207,192,0.4);
+  }
+  footer a { color: rgba(200,169,110,0.6); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 780px) {
+    .page-wrap {
+      grid-template-columns: 1fr;
+      padding: 32px 18px 60px;
+    }
+    .form-card { position: static; padding: 28px 22px; }
+    .field-row { grid-template-columns: 1fr; gap: 0; }
+    .hero { padding: 48px 18px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://university-of-today.com" class="nav-logo">University of Today</a>
+  <a href="https://university-of-today.com" class="nav-back">← Back to main site</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-tag">✦ Team Enrolment</div>
+  <h1>Enrol Your Team in the<br><em>Sleep & Wellbeing Masterclass</em></h1>
+  <p class="hero-sub">Tell us how many employees you would like to enrol. We will send you a payment link within 24 hours — and then your team gets instant access</p>
+  <div class="trust-row">
+    <div class="trust-item">⭐ <span>4.9/5★</span> rating</div>
+    <div class="trust-item">🌙 <span>4,200+</span> employees enrolled</div>
+    <div class="trust-item">🔒 <span>30-day</span> money-back guarantee</div>
+    <div class="trust-item">📧 Response within <span>24 hours</span></div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="page-wrap">
+
+  <!-- LEFT — INFO -->
+  <div class="info-panel">
+
+    <div class="info-section">
+      <h2>How the <em>Team Enrolment</em> Process Works</h2>
+      <p>We handle bulk enrolments directly so that every employee gets their own account, their own login and lifetime access to the full programme — without your team needing to purchase individually.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h4>Submit your team details</h4>
+            <p>Fill in the form with your name, company, work email and the number of employees you would like to enrol. Takes less than 60 seconds.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h4>Receive your payment link within 24 hours</h4>
+            <p>We will email you a secure payment link for the total team amount. Pay by card, bank transfer or invoice — whichever suits your organisation.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h4>Share employee email addresses</h4>
+            <p>Once payment is confirmed, simply send us your list of employee email addresses. You can do this via email or a simple CSV upload.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h4>Instant access for your entire team</h4>
+            <p>Each employee receives a personal login email with immediate access to the full 60-minute programme. No scheduling, no coordination required from HR.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing table -->
+    <div class="info-section">
+      <h2>Team <em>Pricing</em></h2>
+      <div class="pricing-table">
+        <div class="pricing-header">
+          <div>Team size</div>
+          <div class="ph-right">Per person</div>
+          <div class="ph-right">From total</div>
+        </div>
+        <div class="pricing-row">
+          <div class="seats">1–4 employees</div>
+          <div class="per-seat" id="pp-1">$49</div>
+          <div class="total" id="tot-1">from $49</div>
+        </div>
+        <div class="pricing-row featured">
+          <div class="seats">5–24 employees <span class="save-badge">Save 10%</span></div>
+          <div class="per-seat" id="pp-2">$44</div>
+          <div class="total" id="tot-2">from $220</div>
+        </div>
+        <div class="pricing-row featured">
+          <div class="seats">25–49 employees <span class="save-badge">Save 14%</span></div>
+          <div class="per-seat" id="pp-3">$42</div>
+          <div class="total" id="tot-3">from $1,050</div>
+        </div>
+        <div class="pricing-row featured">
+          <div class="seats">50+ employees <span class="save-badge">Save 20%</span></div>
+          <div class="per-seat" id="pp-4">$39</div>
+          <div class="total" id="tot-4">from $1,950</div>
+        </div>
+      </div>
+      <p style="font-size:0.78rem; color:var(--muted); margin-top:10px;">All prices are per person, one-time payment with lifetime access. Discounts applied automatically based on team size confirmed in your enquiry.</p>
+    </div>
+
+    <!-- What's included -->
+    <div class="info-section">
+      <h2>What <em>Every Employee</em> Receives</h2>
+      <div class="includes-list">
+        <div class="include-item">
+          <div class="include-icon">🌬️</div>
+          <div class="include-text">
+            <strong>Module 01 — Breathwork Technique</strong>
+            <span>Science-backed breathwork to lower cortisol, calm the nervous system and prepare the body for deep sleep. Results from the very first session.</span>
+          </div>
+        </div>
+        <div class="include-item">
+          <div class="include-icon">🧘</div>
+          <div class="include-text">
+            <strong>Module 02 — Somatic Yoga for Sleep</strong>
+            <span>Six gentle poses that release the physical tension of the working day and naturally trigger melatonin production.</span>
+          </div>
+        </div>
+        <div class="include-item">
+          <div class="include-icon">🎧</div>
+          <div class="include-text">
+            <strong>Module 03 — Guided Body Scan Meditation</strong>
+            <span>A 10-minute audio meditation that quietens mental chatter and guides employees from a stressed state into deep, restorative sleep.</span>
+          </div>
+        </div>
+        <div class="include-item">
+          <div class="include-icon">📞</div>
+          <div class="include-text">
+            <strong>Bonus — 15-Minute Wellbeing Consultation</strong>
+            <span>Each employee receives a free optional video consultation with our wellbeing coach for personalised support.</span>
+          </div>
+        </div>
+        <div class="include-item">
+          <div class="include-icon">♾️</div>
+          <div class="include-text">
+            <strong>Lifetime Access on Any Device</strong>
+            <span>Self-paced, accessible from home, no scheduling or coordination required from HR.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="guarantee-box">
+      <div class="guarantee-icon">🛡️</div>
+      <div class="guarantee-text">
+        <h4>30-Day Money-Back Guarantee</h4>
+        <p>If your team does not experience better sleep and improved focus within 30 days of completing the programme, we will provide a full refund. No questions asked.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT — FORM -->
+  <div class="form-card">
+    <h2 class="form-title">Request Team Access</h2>
+    <p class="form-sub">We will respond within 24 hours with your payment link.</p>
+
+    <form id="enrol-form" onsubmit="submitEnrolForm(event)">
+
+      <div class="field-row">
+        <div class="field">
+          <label>First name <span class="req">*</span></label>
+          <input type="text" name="first_name" placeholder="Sarah" required>
+        </div>
+        <div class="field">
+          <label>Last name <span class="req">*</span></label>
+          <input type="text" name="last_name" placeholder="Johnson" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Job title <span class="req">*</span></label>
+        <input type="text" name="job_title" placeholder="e.g. HR Director, Chief People Officer" required>
+      </div>
+
+      <div class="field">
+        <label>Company name <span class="req">*</span></label>
+        <input type="text" name="company" placeholder="e.g. Clifford Chance LLP" required>
+      </div>
+
+      <div class="field">
+        <label>Work email address <span class="req">*</span></label>
+        <input type="email" name="email" placeholder="sarah@yourcompany.com" required>
+      </div>
+
+      <div class="field">
+        <label>Number of employees to enrol <span class="req">*</span></label>
+        <select name="team_size" required>
+          <option value="" disabled selected>Select team size</option>
+          <option value="1-4" id="opt-1">1–4 employees</option>
+          <option value="5-24" id="opt-2">5–24 employees (save 10%)</option>
+          <option value="25-49" id="opt-3">25–49 employees (save 14%)</option>
+          <option value="50-99" id="opt-4">50–99 employees (save 20%)</option>
+          <option value="100+" id="opt-5">100+ employees (contact for bespoke pricing)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Industry</label>
+        <select name="industry">
+          <option value="" disabled selected>Select your industry</option>
+          <option value="finance">Finance / Banking / Investment</option>
+          <option value="legal">Legal / Law</option>
+          <option value="media">Media / Publishing / Advertising</option>
+          <option value="technology">Technology</option>
+          <option value="consulting">Consulting / Professional Services</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Anything else you'd like us to know?</label>
+        <textarea name="message" placeholder="e.g. preferred payment method, timeline, any questions..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">
+        Request Team Access →
+      </button>
+
+      <p class="form-note">
+        🔒 Your details are kept private and never shared.<br>
+        We will respond to <strong>contact@university-of-today.com</strong> within 24 hours.
+      </p>
+
+    </form>
+
+    <div class="success-state" id="success-state">
+      <div class="success-icon">✅</div>
+      <h3>Enquiry received!</h3>
+      <p>Thank you for your interest. We will review your team details and send a payment link to your work email within 24 hours.<br><br>In the meantime, feel free to email us directly at<br><a href="mailto:contact@university-of-today.com" style="color:var(--gold);">contact@university-of-today.com</a></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 University of Today &nbsp;·&nbsp;
+    <a href="https://university-of-today.teachable.com/p/terms">Terms</a> &nbsp;·&nbsp;
+    <a href="https://university-of-today.teachable.com/p/privacy">Privacy</a> &nbsp;·&nbsp;
+    <a href="https://university-of-today.com/return-policy.html">Return Policy</a> &nbsp;·&nbsp;
+    <a href="mailto:contact@university-of-today.com">contact@university-of-today.com</a>
+  </p>
+</footer>
+
+<script>
+  async function submitEnrolForm(e) {
+    e.preventDefault();
+    const form   = document.getElementById('enrol-form');
+    const btn    = document.getElementById('submit-btn');
+    const success = document.getElementById('success-state');
+
+    // Collect form data
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    // GA event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'team_enrolment_enquiry', {
+        event_category: 'Lead Generation',
+        event_label: data.company + ' — ' + data.team_size,
+        value: 1
+      });
+    }
+
+    // Submit to Formspree → forwards to contact@university-of-today.com
+    try {
+      const res = await fetch('https://formspree.io/f/mgorljoz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          _subject: `Team Enrolment Enquiry — ${data.company} (${data.team_size} employees)`,
+          first_name:  data.first_name,
+          last_name:   data.last_name,
+          job_title:   data.job_title,
+          company:     data.company,
+          email:       data.email,
+          team_size:   data.team_size,
+          industry:    data.industry || 'Not specified',
+          message:     data.message  || 'None',
+          _replyto:    data.email,
+        })
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      btn.textContent = 'Request Team Access →';
+      btn.disabled = false;
+      alert('Something went wrong. Please email us directly at contact@university-of-today.com');
+    }
+  }
+</script>
+
+
+<script>
+  // ── GEO-BASED PRICING FOR ENROL PAGE ──
+  var EU_COUNTRIES = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE',
+                      'IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE',
+                      'NO','IS','LI','CH'];
+
+  // Tier pricing by region
+  // Tiers: [1-4, 5-24, 25-49, 50+]
+  var TIERS = {
+    GB: {
+      symbol: '£',
+      pp:     ['£49', '£44', '£42', '£39'],
+      totals: ['from £49', 'from £220', 'from £1,050', 'from £1,950'],
+      opts:   ['1–4 employees — £49 per person',
+               '5–24 employees — £44 per person (save 10%)',
+               '25–49 employees — £42 per person (save 14%)',
+               '50–99 employees — £39 per person (save 20%)',
+               '100+ employees — contact for bespoke pricing'],
+    },
+    EU: {
+      symbol: '€',
+      pp:     ['€49', '€44', '€42', '€39'],
+      totals: ['from €49', 'from €220', 'from €1,050', 'from €1,950'],
+      opts:   ['1–4 employees — €49 per person',
+               '5–24 employees — €44 per person (save 10%)',
+               '25–49 employees — €42 per person (save 14%)',
+               '50–99 employees — €39 per person (save 20%)',
+               '100+ employees — contact for bespoke pricing'],
+    },
+    IN: {
+      symbol: '₹',
+      pp:     ['₹4,000', '₹3,600', '₹3,400', '₹3,200'],
+      totals: ['from ₹4,000', 'from ₹18,000', 'from ₹85,000', 'from ₹1,60,000'],
+      opts:   ['1–4 employees — ₹4,000 per person',
+               '5–24 employees — ₹3,600 per person (save 10%)',
+               '25–49 employees — ₹3,400 per person (save 14%)',
+               '50–99 employees — ₹3,200 per person (save 20%)',
+               '100+ employees — contact for bespoke pricing'],
+    },
+    ROW: {
+      symbol: '$',
+      pp:     ['$49', '$44', '$42', '$39'],
+      totals: ['from $49', 'from $220', 'from $1,050', 'from $1,950'],
+      opts:   ['1–4 employees — $49 per person',
+               '5–24 employees — $44 per person (save 10%)',
+               '25–49 employees — $42 per person (save 14%)',
+               '50–99 employees — $39 per person (save 20%)',
+               '100+ employees — contact for bespoke pricing'],
+    }
+  };
+
+  function applyEnrolPricing(region) {
+    var t = TIERS[region] || TIERS.ROW;
+
+    // Update pricing table
+    var ppIds  = ['pp-1', 'pp-2', 'pp-3', 'pp-4'];
+    var totIds = ['tot-1','tot-2','tot-3','tot-4'];
+    ppIds.forEach(function(id, i) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = t.pp[i];
+    });
+    totIds.forEach(function(id, i) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = t.totals[i];
+    });
+
+    // Update dropdown options
+    var sel = document.querySelector('select[name="team_size"]');
+    if (sel) {
+      var vals = ['1-4','5-24','25-49','50-99','100+'];
+      Array.from(sel.options).forEach(function(opt, i) {
+        if (i === 0) return; // skip placeholder
+        var idx = i - 1;
+        if (t.opts[idx]) opt.text = t.opts[idx];
+      });
+    }
+  }
+
+  // Fetch geo and apply
+  fetch('https://ipapi.co/json/')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (!d || !d.country_code) { applyEnrolPricing('ROW'); return; }
+      var cc = d.country_code;
+      if (cc === 'GB')                        applyEnrolPricing('GB');
+      else if (cc === 'IN')                   applyEnrolPricing('IN');
+      else if (EU_COUNTRIES.indexOf(cc) >= 0) applyEnrolPricing('EU');
+      else                                    applyEnrolPricing('ROW');
+    })
+    .catch(function() { applyEnrolPricing('ROW'); });
+</script>
+
+</body>
+</html>
